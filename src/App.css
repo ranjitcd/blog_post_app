@@ -1,0 +1,96 @@
+
+.input-placeholder input {
+  flex: 0 1 8em;
+  border: 0;
+  background-color: #eee;
+  padding-left:1em;
+  
+}
+.input-placeholder input:focus{
+  outline: 0;
+}
+.input-placeholder button{
+  margin-left: -35px;
+  background-color: #a33450;
+  color: white;
+  padding:1em;
+  flex: 0 0 auto;
+  border-radius: 0 1em 1em 0;
+  cursor: pointer;
+  border: none;
+  
+}
+
+.input-placeholder button:hover{
+  background-color: #939633;
+
+}
+.input-placeholder button:focus{
+  outline: 0;
+  
+}
+.input-placeholder span{
+  display: inline-block;
+  /* margin-top: .5px; */
+  padding: 1em;
+  background-color: #eee;
+  border-radius: 1em 0 0 1em;
+}
+.input-placeholder{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.button-container{
+  display: flex;
+  justify-content:space-around;
+  padding:10px;
+  margin:10px
+}
+.button-container button:focus{
+  outline: 0;
+}
+article {
+  display: grid;
+  grid-template-columns: 
+    [full-start] minmax(1em, 1fr) 
+    [main-start] minmax(0, 70em) [main-end]
+    minmax(1em, 1fr) [full-end];
+    grid-gap: 1em;
+    margin: 1em;
+}
+
+section {
+  grid-column: main;
+}
+
+article > * {
+  background-color: #f9a36d;
+  padding: 2em;
+}
+.leftsection{
+  margin: 0 7em;
+}
+.leftsection input{
+  margin-bottom:  1em;
+  padding:1em;
+  width:100%;
+}
+.inputfield{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.leftsection Button{
+  margin-top:10px;
+  padding:.5em 1em;
+}
+.ck-editor__editable_inline {
+  min-height: 200px;
+}
+@media (max-width: 530px) {
+  .leftsection{
+    margin: 0 3em;
+  }
+}
